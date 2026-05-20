@@ -19,10 +19,7 @@ cols = [
     "bitscore"
 ]
 
-hits = pd.read_csv("unique_sq_best_hits.tsv", sep="\t", names=cols)
-
-mask = hits['query'].str.contains(r'\|', na=False)
-hits.loc[mask, 'query'] = hits.loc[mask, 'query'].str.split(r'\|').str[1]
+hits = pd.read_csv("../data/unique_sq_best_hits.tsv", sep="\t", names=cols)
 
 # 2. PARSE TARGET IDS
 
@@ -33,7 +30,7 @@ hits["locus_tag"] = hits["target"].str.split("_").str[-2:].str.join("_")
 
 gff_records = []
 
-gff_files = glob.glob("/beegfs/lvsea/bakta_annotation/*/*/*.gff3")
+gff_files = glob.glob("../data/bakta_annotation/*/*.gff3")
 
 for gff in gff_files:
 
@@ -82,7 +79,7 @@ meta = hits.merge(gff_df, on=["MAG", "locus_tag"], how="left")
 
 # 5. ADD TAXONOMY
 
-tax = pd.read_csv("gtdbtk_summary_all.csv", sep="\t")
+tax = pd.read_csv("../data/gtdbtk_summary_all.csv", sep="\t")
 
 tax["MAG"] = tax["user_genome"].str.replace("MAG_", "", regex=False)
 tax = tax.rename(columns={"classification": "taxonomy"})
