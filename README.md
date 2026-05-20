@@ -1,9 +1,9 @@
-# Comparative analysis of sulfoquinovose metabolism across herbivorous animal microbiomes 🌿
+# Comparative analysis of sulfoquinovose metabolism across herbivorous animal microbiomes 🌿🌾🐄
 
 The project aims to investigate the metabolic capacity of gut microbiomes from herbivorous animals to utilize **sulfoquinovose (SQ)**, a plant-derived sugar that is known to be metabolized by the gut microbiota. To identify microbial taxa and metabolic pathways associated with sulfoquinovose (SQ) utilization we created a workflow for the searching and classification of potential loci of sulfoquinose metabolism in **metagenomically assembled genomes (MAGs)**
 
 **Data source**:
-Here we focused on studying cattle microbiomes leveraging publicly available metagenomic datasets (4,941 rumen microbial MAGs from 282 ruminant cattle 🐄)
+Here we focused on studying cattle microbiomes leveraging publicly available metagenomic datasets (4,941 rumen microbial MAGs from 282 ruminant cattle)
 - [Compendium of 4,941 rumen metagenome-assembled genomes for rumen microbiome biology and enzyme discovery | Nature Biotechnology](https://www.nature.com/articles/s41587-019-0202-3)
 
 - https://www.ncbi.nlm.nih.gov/bioproject/522726
