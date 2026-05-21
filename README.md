@@ -8,37 +8,54 @@ Here we focused on studying cattle microbiomes leveraging publicly available met
 
 - https://www.ncbi.nlm.nih.gov/bioproject/522726
 
-## Workflow
-### Data collection
-With `genomes_download.py` script collect MAGs from NCBI using a list of assembly IDs (GCF/GCA)
+## 🔀 Workflow
+### 🔍 Data collection
+With [`genomes_download.py`](http://localhost:8888/edit/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/genomes_download.py) script collect MAGs from NCBI using a list of assembly IDs (GCF/GCA)
 
-### Data preparation
-1. **Quality control** (>70% completeness): **CheckM2** (https://github.com/chklovski/CheckM2)
-2. **Dereplication** (<5% contamination): **dRep** (https://github.com/MrOlm/drep)
+### 🧹 Data preparation
+1. **Quality control** (>70% completeness): **[CheckM2](https://github.com/chklovski/CheckM2)**
+2. **Dereplication** (<5% contamination): **[dRep](https://github.com/MrOlm/drep)**
    
-### Data processing
-1. **MAGs annotation** with `bakta_annot.sh` - script for genome annotation using Bakta (https://github.com/oschwengers/bakta) with pre-download of a light bakta database
-2. **MAGs taxonomy: GTDBtk** (https://github.com/ecogenomics/gtdbtk)
-3. **Homology search**: `diamond.sh` - diamond (https://github.com/bbuchfink/diamond)
-4. **Build up meta-table**: `build_meta.py`
+### ⚙️ Data processing
+1. **MAGs annotation** with [`bakta_annot.sh`](http://localhost:8888/edit/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/bakta_annot.sh) - script for genome annotation using **[Bakta](https://github.com/oschwengers/bakta)** with pre-download of a light bakta database
+2. **MAGs taxonomy: [GTDBtk](https://github.com/ecogenomics/gtdbtk)**
+3. **Homology search**: [`diamond.sh`](http://localhost:8888/edit/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/diamond.sh) - **[diamond](https://github.com/bbuchfink/diamond)**
+4. **Build up meta-table**: [`build_meta.py`](http://localhost:8888/edit/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/build_meta.py)
    
-### Data analysis
-1. Co-localization check and SQ-loci classification - `sq-clusters.ipynb`
-2. Genes co-occurrence - `co-occurance.ipynb`
-3. Study of the most complete loci - `loci.ipynb`
-4. Phylogenetic tree reconstruction - `tree.ipynb`
-5. Distribution analysis - `distribution_analysis.ipynb`
-6. SQ-loci visualization - `vizualize_landscape.ipynb`
+### 📊 Data analysis
+1. Co-localization check and SQ-loci classification - [`sq-clusters.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/sq-clusters.ipynb)
+2. Genes co-occurrence - [`co-occurance.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/co-occurance.ipynb)
+3. Study of the most complete loci - [`loci.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/loci.ipynb)
+4. Phylogenetic tree reconstruction - [`tree.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/tree.ipynb)
+5. Distribution analysis - [`distribution_analysis.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/distribution_analysis.ipynb)
+6. SQ-loci visualization - [`vizualize_landscape.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/vizualize_landscape.ipynb)
 
-## Data information
-- SQ_ref_enzymes.tsv - a table with information on enzymes of different metabolic pathways of sulfoquinose degradation
-- sq_enzymes.faa - protein fasta sequences of sulfoquinose degradation enzymes
-- assemblies_ids.txt - list of MAGs IDs after CheckM2 and dRep (data preparation step)
-- bakta_annotation - a directory with annotation results (only the genomes visualized further are presented) 
-- unique_sq_best_hits.tsv - `diamond.sh` output file with best diamond hits
-- gtdbtk_summary_all.csv - GTDBtk output table
-- SQ_metatable_all.tsv - `build_meta.py` output table with meta information about diamond hits
-- clusters_candidates.tsv
-- final_table.csv
-- clusters_filtered.csv 
-- classify             
+## 🗂️ Data information
+- [SQ_ref_enzymes.tsv](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/SQ_ref_enzymes.tsv) - a table with information on enzymes of different metabolic pathways of sulfoquinose degradation
+- [sq_enzymes.faa](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/sq_enzymes.faa) - protein fasta sequences of sulfoquinose degradation enzymes
+- [assemblies_ids.txt](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/assemblies_ids.txt) - list of MAGs IDs after CheckM2 and dRep (data preparation step)
+- [bakta_annotation](https://github.com/lvsea00/Herbivores_SQ_metabolism/tree/main/data/bakta_annotations) - a directory with annotation results (only the genomes visualized further are presented) 
+- [unique_sq_best_hits.tsv](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/unique_sq_best_hits.tsv) - `diamond.sh` output file with best diamond hits
+- [gtdbtk_summary_all.csv](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/gtdbtk_summary_all.csv) - GTDBtk output table
+- [SQ_metatable_all.tsv](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/SQ_metatable_all.tsv) - `build_meta.py` output table with meta information about diamond hits
+- [clusters_candidates.csv](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/clusters_candidates.csv)- table with all the genes that form putative SQ clusters, `sq-clusters.ipynb` output
+- [final_table.csv](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/final_table.csv) - final table with all putative SQ clusters after pathways searching, `sq-clusters.ipynb` output
+- [clusters_filtered.csv](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/clusters_filtered.csv)  - table with the most complete SQ clusters, `sq-clusters.ipynb` output
+- [classify](https://github.com/lvsea00/Herbivores_SQ_metabolism/tree/main/data/classify) - directory with GTDBtk results
+
+## 📝 Results
+**1.** A total of 2175 dereplicated MAGs from 4941 downloaded were analyzed, resulting in the identification of 401 putative SQ-associated loci
+**2.** Following gene co-localization and loci classification, 5 of 6 known pathways were detected (sulfo-EMP, sulfo-TAL, sulfo-TK,  sulfo-ASMO, sulfo-ED)
+   
+<img width="4200" height="1800" alt="image" src="https://github.com/user-attachments/assets/cfc43cdb-1efe-4ec8-80be-2f8c10ff2cfe" />
+
+**3.** The performed phylogenetic reconstruction suggests that *Bacillota*, particularly **Lachnospirales** (enriched in sulfo-TAL) and **Oscillospirales** (enriched in sulfo-TK), are the dominant SQ-degrading bacteria
+
+<img width="4000" height="4088" alt="image" src="https://github.com/user-attachments/assets/e577943e-86d1-41db-9859-6cb05ac8ce04" />
+
+**4.** The genetic context of the most complete and widespread locus variants (sulfo-EMP, sulfo-TAL, sulfo-TK) was reconstructed
+
+## Conclusions
+
+## Contact
+
