@@ -1,0 +1,10 @@
+name: herbivores_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13.12
+  - bakta=1.12.0
+  - beautifulsoup4
+  
