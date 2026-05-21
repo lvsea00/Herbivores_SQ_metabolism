@@ -13,8 +13,8 @@ Here we focused on studying cattle microbiomes leveraging publicly available met
 With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/genomes_download.py) script collect MAGs from NCBI using a list of assembly IDs (GCF/GCA)
 
 ### 🧹 Data preparation
-1. **Quality control** (>70% completeness): **[CheckM2](https://github.com/chklovski/CheckM2)**
-2. **Dereplication** (<5% contamination): **[dRep](https://github.com/MrOlm/drep)**
+1. **Quality control** (>70% completeness): **[CheckM2](https://github.com/chklovski/CheckM2)** with default parameters
+2. **Dereplication** (<5% contamination): **[dRep](https://github.com/MrOlm/drep)** - [`dRep.sh`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/dRep.sh)
    
 ### ⚙️ Data processing
 1. **MAGs annotation**: **[Bakta](https://github.com/oschwengers/bakta)** annotation with [`bakta_annot.sh`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/bakta_annot.sh)
@@ -45,6 +45,7 @@ With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism
 
 ## 📝 Results
 **1.** A total of 2175 dereplicated MAGs from 4941 downloaded were analyzed, resulting in the identification of 401 putative SQ-associated loci
+
 **2.** Following gene co-localization and loci classification, 5 of 6 known pathways were detected (sulfo-EMP, sulfo-TAL, sulfo-TK,  sulfo-ASMO, sulfo-ED)
    
 <img width="4200" height="1800" alt="image" src="https://github.com/user-attachments/assets/cfc43cdb-1efe-4ec8-80be-2f8c10ff2cfe" />
