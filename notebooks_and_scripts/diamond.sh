@@ -31,5 +31,5 @@ diamond blastp \
 
 
 # select unique matches
-sort -k2,2 -k12,12nr sq_hits.tsv | awk '!seen[$2]++' > "$OUT_DIR/unique_sq_best_hits.tsv"
+sort -k2,2 -k12,12nr sq_hits.tsv | awk '!seen[$2]++' > "unique_sq_best_hits.tsv"
 
