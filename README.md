@@ -10,25 +10,25 @@ Here we focused on studying cattle microbiomes leveraging publicly available met
 
 ## 🔀 Workflow
 ### 🔍 Data collection
-With [`genomes_download.py`](http://localhost:8888/edit/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/genomes_download.py) script collect MAGs from NCBI using a list of assembly IDs (GCF/GCA)
+With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/genomes_download.py) script collect MAGs from NCBI using a list of assembly IDs (GCF/GCA)
 
 ### 🧹 Data preparation
 1. **Quality control** (>70% completeness): **[CheckM2](https://github.com/chklovski/CheckM2)**
 2. **Dereplication** (<5% contamination): **[dRep](https://github.com/MrOlm/drep)**
    
 ### ⚙️ Data processing
-1. **MAGs annotation** with [`bakta_annot.sh`](http://localhost:8888/edit/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/bakta_annot.sh) - script for genome annotation using **[Bakta](https://github.com/oschwengers/bakta)** with pre-download of a light bakta database
-2. **MAGs taxonomy: [GTDBtk](https://github.com/ecogenomics/gtdbtk)**
-3. **Homology search**: [`diamond.sh`](http://localhost:8888/edit/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/diamond.sh) - **[diamond](https://github.com/bbuchfink/diamond)**
-4. **Build up meta-table**: [`build_meta.py`](http://localhost:8888/edit/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/build_meta.py)
+1. **MAGs annotation**: **[Bakta](https://github.com/oschwengers/bakta)** annotation with [`bakta_annot.sh`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/bakta_annot.sh)
+2. **MAGs taxonomy**: defining taxonomic composition with [GTDBtk](https://github.com/ecogenomics/gtdbtk)
+3. **Homology search**: searching for distant homologues of reference proteins from the SQ metabolism pathways in MAGs with **[diamond](https://github.com/bbuchfink/diamond)**, [`diamond.sh`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/diamond.sh)
+4. **Build up meta-table**: collecting meta information about the found homologues with [`build_meta.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/build_meta.py)
    
 ### 📊 Data analysis
-1. Co-localization check and SQ-loci classification - [`sq-clusters.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/sq-clusters.ipynb)
-2. Genes co-occurrence - [`co-occurance.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/co-occurance.ipynb)
-3. Study of the most complete loci - [`loci.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/loci.ipynb)
-4. Phylogenetic tree reconstruction - [`tree.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/tree.ipynb)
-5. Distribution analysis - [`distribution_analysis.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/distribution_analysis.ipynb)
-6. SQ-loci visualization - [`vizualize_landscape.ipynb`](http://localhost:8888/notebooks/IB/herbivores/github_Herbivores/Herbivores_SQ_metabolism/notebooks_and_scripts/vizualize_landscape.ipynb)
+1. **Co-localization check and SQ-loci classification** - [`sq-clusters.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/sq-clusters.ipynb)
+2. **Genes co-occurrence** - [`co-occurance.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/co-occurance.ipynb)
+3. **Study of the most complete loci** - [`loci.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/loci.ipynb)
+4. **Phylogenetic tree reconstruction** - [`tree.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/tree.ipynb)
+5. **Distribution analysis** - [`distribution_analysis.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/distribution_analysis.ipynb)
+6. **SQ-loci visualization** - [`vizualize_landscape.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/vizualize_landscape.ipynb)
 
 ## 🗂️ Data information
 - [SQ_ref_enzymes.tsv](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/SQ_ref_enzymes.tsv) - a table with information on enzymes of different metabolic pathways of sulfoquinose degradation
