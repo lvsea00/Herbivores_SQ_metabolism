@@ -51,9 +51,9 @@ With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism
 ### 📊 Data analysis
 1. **Co-localization check and SQ-loci classification** - [`sq-clusters.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/sq-clusters.ipynb)
 2. **Genes co-occurrence** - [`co-occurance.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/co-occurance.ipynb)
-3. **Study of the most complete loci** - [`loci.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/loci.ipynb)
-4. **Phylogenetic tree reconstruction** - [`tree.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/tree.ipynb)
-5. **Distribution analysis** - [`distribution_analysis.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/distribution_analysis.ipynb)
+3. **Phylogenetic tree reconstruction** - [`tree.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/tree.ipynb)
+4. **Distribution analysis** - [`distribution_analysis.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/distribution_analysis.ipynb)
+5. **Study of the most complete loci** - [`loci.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/loci.ipynb)
 6. **SQ-loci visualization** - [`vizualize_landscape.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/vizualize_landscape.ipynb)
 
 ## 🗂️ Data information
@@ -70,19 +70,22 @@ With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism
 - [classify](https://github.com/lvsea00/Herbivores_SQ_metabolism/tree/main/data/classify) - directory with GTDBtk results
 
 ## 📝 Results
-**1.** A total of 2175 dereplicated MAGs from 4941 downloaded were analyzed, resulting in the identification of 401 putative SQ-associated loci
-
-**2.** Following gene co-localization and loci classification, 5 of 6 known pathways were detected (sulfo-EMP, sulfo-TAL, sulfo-TK,  sulfo-ASMO, sulfo-ED)
-   
-<img width="4200" height="1800" alt="image" src="https://github.com/user-attachments/assets/cfc43cdb-1efe-4ec8-80be-2f8c10ff2cfe" />
-
-**3.** The performed phylogenetic reconstruction suggests that *Bacillota*, particularly **Lachnospirales** (enriched in sulfo-TAL) and **Oscillospirales** (enriched in sulfo-TK), are the dominant SQ-degrading bacteria
+A total of 2175 dereplicated MAGs from 4941 downloaded were analyzed, resulting in the identification of 401 putative SQ-associated loci. Following gene co-localization and loci classification, 5 of 6 known pathways were detected (sulfo-EMP, sulfo-TAL, sulfo-TK,  sulfo-ASMO, sulfo-ED), with sulfo-EMP, sulfo-TAL, sulfo-TK in high-quality loci.The performed phylogenetic reconstruction suggests that *Bacillota*, particularly *Lachnospirales* (enriched in sulfo-TAL) and *Oscillospirales* (enriched in sulfo-TK), are the dominant SQ-degrading bacteria.
 
 <img width="1149" height="924" alt="image" src="https://github.com/user-attachments/assets/f49035b7-4d15-4850-8f48-cd75847ef980" />
 
-**4.** The genetic context of the most complete and widespread locus variants (sulfo-EMP, sulfo-TAL, sulfo-TK) was reconstructed
+The genetic context of the most complete and widespread locus variants (sulfo-EMP, sulfo-TAL, sulfo-TK) was reconstructed. Sulfo-EMP loci typically included *sqiA*, *sqvD*, and *yihV*, with accessory genes (e.g., *slaB*, *sqiK*, *squF*). Sulfo-TAL loci contained *sqvA*, *sqvB*, *sqvD*, *yihQ*, and *yihU*. Sulfo-TK loci comprised *sqwF–sqwG–sqwH–sqwI* together with *sqvD* and occasionally *yihQ*. The gene *sqvD* was present in all pathways.
+
+<img width="1886" height="624" alt="image" src="https://github.com/user-attachments/assets/b682b15d-3bcf-4dd7-9320-ed98e0ff763a" />
+
 
 ## Conclusions
+In 2175 MAGs analysis 401 putative clusters were identified including 153 high-quality loci. We developed a workflow to elucidate sulfoquinose metabolism pathways within genomic datasets, enabling comparative analysis of their representation and visualization of genomic contexts. This approach facilitates the exploration of the relationship between gut microbiota composition and sulfoquinose metabolism in the studied animals.
 
-## Contact
 
+## Contacts
+ArseniyMelnik: 14amelnikd@gmail.com
+
+Elizaveta Salnikova: lvsea00@gmail.com
+
+Anna Rybina: rybinaann@gmail.com
