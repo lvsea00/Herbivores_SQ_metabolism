@@ -8,6 +8,32 @@ Here we focused on studying cattle microbiomes leveraging publicly available met
 
 - https://www.ncbi.nlm.nih.gov/bioproject/522726
 
+## Hardware Recomendations
+- **CPU:** 32+ cores
+- **RAM:** 128+ GB (150 GB recomended for GTDB-Tk)
+- **Storage:** ~500 GB disk space for genomes and databases
+
+### Setting up the environments
+- **Main environment**
+
+   ```
+   conda env create -f environment.yml
+   conda activate herbivores_env
+   ```
+
+- **CheckM2 environment**
+
+   Installation - [CheckM2](https://github.com/chklovski/CheckM2)
+   
+   CheckM2 version used: v1.0.2
+
+- **dRep environment**
+
+   Installation - [dRep](https://github.com/MrOlm/drep)
+   
+   dRep version used: v3.6.2
+
+
 ## 🔀 Workflow
 ### 🔍 Data collection
 With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/genomes_download.py) script collect MAGs from NCBI using a list of assembly IDs (GCF/GCA)
