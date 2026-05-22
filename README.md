@@ -76,6 +76,9 @@ A total of 2175 dereplicated MAGs from 4941 downloaded were analyzed, resulting 
 
 The genetic context of the most complete and widespread locus variants (sulfo-EMP, sulfo-TAL, sulfo-TK) was reconstructed. Sulfo-EMP loci typically included *sqiA*, *sqvD*, and *yihV*, with accessory genes (e.g., *slaB*, *sqiK*, *squF*). Sulfo-TAL loci contained *sqvA*, *sqvB*, *sqvD*, *yihQ*, and *yihU*. Sulfo-TK loci comprised *sqwF–sqwG–sqwH–sqwI* together with *sqvD* and occasionally *yihQ*. The gene *sqvD* was present in all pathways.
 
+<img width="1423" height="958" alt="image" src="https://github.com/user-attachments/assets/7f5dcd29-4e1d-456e-930e-6a9bf93b63f2" />
+
+
 <img width="1886" height="624" alt="image" src="https://github.com/user-attachments/assets/b682b15d-3bcf-4dd7-9320-ed98e0ff763a" />
 
 
