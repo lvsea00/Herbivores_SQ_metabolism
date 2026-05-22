@@ -8,12 +8,12 @@ Here we focused on studying cattle microbiomes leveraging publicly available met
 
 - https://www.ncbi.nlm.nih.gov/bioproject/522726
 
-## Hardware Recomendations
+## System Requirements
 - **CPU:** 32+ cores
 - **RAM:** 128+ GB (150 GB recomended for GTDB-Tk)
 - **Storage:** ~500 GB disk space for genomes and databases
 
-### Setting up the environments
+## Environments Setup
 - **Main environment**
 
    ```
@@ -78,7 +78,7 @@ With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism
 
 **3.** The performed phylogenetic reconstruction suggests that *Bacillota*, particularly **Lachnospirales** (enriched in sulfo-TAL) and **Oscillospirales** (enriched in sulfo-TK), are the dominant SQ-degrading bacteria
 
-<img width="4000" height="4088" alt="image" src="https://github.com/user-attachments/assets/e577943e-86d1-41db-9859-6cb05ac8ce04" />
+<img width="1149" height="924" alt="image" src="https://github.com/user-attachments/assets/f49035b7-4d15-4850-8f48-cd75847ef980" />
 
 **4.** The genetic context of the most complete and widespread locus variants (sulfo-EMP, sulfo-TAL, sulfo-TK) was reconstructed
 
