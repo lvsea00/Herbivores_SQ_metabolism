@@ -8,12 +8,12 @@ Here we focused on studying cattle microbiomes leveraging publicly available met
 
 - https://www.ncbi.nlm.nih.gov/bioproject/522726
 
-## System Requirements
+## 💻 System Requirements
 - **CPU:** 32+ cores
 - **RAM:** 128+ GB (150 GB recomended for GTDB-Tk)
 - **Storage:** ~500 GB disk space for genomes and databases
 
-## Environments Setup
+## 🛠️ Environments Setup
 - **Main environment**
 
    ```
@@ -44,7 +44,7 @@ With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism
    
 ### ⚙️ Data processing
 1. **MAGs annotation**: **[Bakta](https://github.com/oschwengers/bakta)** annotation with [`bakta_annot.sh`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/bakta_annot.sh)
-2. **MAGs taxonomy**: defining taxonomic composition with [GTDBtk](https://github.com/ecogenomics/gtdbtk)
+2. **MAGs taxonomy**: defining taxonomic composition with **[GTDBtk](https://github.com/ecogenomics/gtdbtk)**
 3. **Homology search**: searching for distant homologues of reference proteins from the SQ metabolism pathways in MAGs with **[diamond](https://github.com/bbuchfink/diamond)**, [`diamond.sh`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/diamond.sh)
 4. **Build up meta-table**: collecting meta information about the found homologues with [`build_meta.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/build_meta.py)
    
@@ -54,7 +54,7 @@ With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism
 3. **Phylogenetic tree reconstruction** - [`tree.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/tree.ipynb)
 4. **Distribution analysis** - [`distribution_analysis.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/distribution_analysis.ipynb)
 5. **Study of the most complete loci** - [`loci.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/loci.ipynb)
-6. **SQ-loci visualization** - [`vizualize_landscape.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/vizualize_landscape.ipynb)
+6. **SQ-loci visualization** - [`visualize_landscape.ipynb`](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/notebooks_and_scripts/visualize_landscape.ipynb)
 
 ## 🗂️ Data information
 - [SQ_ref_enzymes.tsv](https://github.com/lvsea00/Herbivores_SQ_metabolism/blob/main/data/SQ_ref_enzymes.tsv) - a table with information on enzymes of different metabolic pathways of sulfoquinose degradation
@@ -70,7 +70,7 @@ With [`genomes_download.py`](https://github.com/lvsea00/Herbivores_SQ_metabolism
 - [classify](https://github.com/lvsea00/Herbivores_SQ_metabolism/tree/main/data/classify) - directory with GTDBtk results
 
 ## 📝 Results
-A total of 2175 dereplicated MAGs from 4941 downloaded were analyzed, resulting in the identification of 401 putative SQ-associated loci. Following gene co-localization and loci classification, 5 of 6 known pathways were detected (sulfo-EMP, sulfo-TAL, sulfo-TK,  sulfo-ASMO, sulfo-ED), with sulfo-EMP, sulfo-TAL, sulfo-TK in high-quality loci.The performed phylogenetic reconstruction suggests that *Bacillota*, particularly *Lachnospirales* (enriched in sulfo-TAL) and *Oscillospirales* (enriched in sulfo-TK), are the dominant SQ-degrading bacteria.
+A total of 2175 dereplicated MAGs from 4941 downloaded were analyzed, resulting in the identification of 401 putative SQ-associated loci. Following gene co-localization and loci classification, 5 of 6 known pathways were detected (sulfo-EMP, sulfo-TAL, sulfo-TK,  sulfo-ASMO, sulfo-ED), with sulfo-EMP, sulfo-TAL, sulfo-TK being the most complete loci. The performed phylogenetic reconstruction suggests that *Bacillota*, particularly *Lachnospirales* (enriched in sulfo-TAL) and *Oscillospirales* (enriched in sulfo-TK), are the dominant SQ-degrading bacteria.
 
 <img width="1149" height="924" alt="image" src="https://github.com/user-attachments/assets/f49035b7-4d15-4850-8f48-cd75847ef980" />
 
@@ -83,9 +83,9 @@ The genetic context of the most complete and widespread locus variants (sulfo-EM
 <img width="1886" height="624" alt="image" src="https://github.com/user-attachments/assets/b682b15d-3bcf-4dd7-9320-ed98e0ff763a" />
 
 
-## Conclusions
-In 2175 MAGs analysis 401 putative clusters were identified including 153 of the most complete loci. We developed a workflow to elucidate sulfoquinovose metabolism pathways within genomic datasets, enabling comparative analysis of their representation and visualization of genomic contexts. This approach facilitates the exploration of the relationship between gut microbiota composition and sulfoquinovose metabolism in the studied animals.
+## ✅ Conclusions
+In 2175 MAGs analysis 401 putative clusters were identified including 153 of the most complete loci (sulfo-EMP, sulfo-TAL, sulfo-TK) predominantly in *Bacillota*. Here we developed a workflow to elucidate sulfoquinovose metabolism pathways within genomic datasets, enabling comparative analysis of their representation and loci visualization. This approach facilitates the exploration of the relationship between gut microbiota composition and sulfoquinovose metabolism in the studied animals.
 
 
-## Contacts
+## 📩 Contacts
 Arseniy Melnik: 14amelnikd@gmail.com, Elizaveta Salnikova: lvsea00@gmail.com, Anna Rybina: rybinaann@gmail.com
