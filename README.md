@@ -74,21 +74,18 @@ A total of 2175 dereplicated MAGs from 4941 downloaded were analyzed, resulting 
 
 <img width="1149" height="924" alt="image" src="https://github.com/user-attachments/assets/f49035b7-4d15-4850-8f48-cd75847ef980" />
 
-The genetic context of the most complete and widespread locus variants (sulfo-EMP, sulfo-TAL, sulfo-TK) was reconstructed. Sulfo-EMP loci typically included *sqiA*, *sqvD*, and *yihV*, with accessory genes (e.g., *slaB*, *sqiK*, *squF*). Sulfo-TAL loci contained *sqvA*, *sqvB*, *sqvD*, *yihQ*, and *yihU*. Sulfo-TK loci comprised *sqwF–sqwG–sqwH–sqwI* together with *sqvD* and occasionally *yihQ*. The gene *sqvD* was present in all pathways.
+The dominance of *Bacillota*, including most sulfo-EMP, sulfo-TAL, and sulfo-TK loci, is consistent with previous reports on Gram-positive anaerobes in SQ degradation. Enrichment of sulfo-TAL and sulfo-TK pathways within *Clostridia*-related lineages agrees with earlier observations predominantly in *Firmicutes* (*Bacillota*).
 
 <img width="1423" height="958" alt="image" src="https://github.com/user-attachments/assets/7f5dcd29-4e1d-456e-930e-6a9bf93b63f2" />
 
+The genetic context of the most complete and widespread locus variants (sulfo-EMP, sulfo-TAL, sulfo-TK) was reconstructed. Sulfo-EMP loci typically included *sqiA*, *sqvD*, and *yihV*, with accessory genes (e.g., *slaB*, *sqiK*, *squF*). Sulfo-TAL loci contained *sqvA*, *sqvB*, *sqvD*, *yihQ*, and *yihU*. Sulfo-TK loci comprised *sqwF–sqwG–sqwH–sqwI* together with *sqvD* and occasionally *yihQ*. The gene *sqvD* was present in all pathways.
 
 <img width="1886" height="624" alt="image" src="https://github.com/user-attachments/assets/b682b15d-3bcf-4dd7-9320-ed98e0ff763a" />
 
 
 ## Conclusions
-In 2175 MAGs analysis 401 putative clusters were identified including 153 high-quality loci. We developed a workflow to elucidate sulfoquinose metabolism pathways within genomic datasets, enabling comparative analysis of their representation and visualization of genomic contexts. This approach facilitates the exploration of the relationship between gut microbiota composition and sulfoquinose metabolism in the studied animals.
+In 2175 MAGs analysis 401 putative clusters were identified including 153 of the most complete loci. We developed a workflow to elucidate sulfoquinovose metabolism pathways within genomic datasets, enabling comparative analysis of their representation and visualization of genomic contexts. This approach facilitates the exploration of the relationship between gut microbiota composition and sulfoquinovose metabolism in the studied animals.
 
 
 ## Contacts
-ArseniyMelnik: 14amelnikd@gmail.com
-
-Elizaveta Salnikova: lvsea00@gmail.com
-
-Anna Rybina: rybinaann@gmail.com
+Arseniy Melnik: 14amelnikd@gmail.com, Elizaveta Salnikova: lvsea00@gmail.com, Anna Rybina: rybinaann@gmail.com
