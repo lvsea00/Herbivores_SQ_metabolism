@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-import pandas as pd
+import argparse
 import glob
 import os
-import argparse
+
+import pandas as pd
 
 def main():
     parser = argparse.ArgumentParser(description='Build metatable script.')

@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-import requests
-import time
-import os
 import argparse
 import logging
-from bs4 import BeautifulSoup
+import os
+import time
 from urllib.parse import urljoin
+
+from bs4 import BeautifulSoup
+import requests
 
 
 def get_folder_url(base_url, genome_id):
