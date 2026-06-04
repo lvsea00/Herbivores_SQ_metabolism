@@ -67,7 +67,6 @@ def process_genome_id(genome_id, output_dir):
         try:
             download_file(download_url, output_path)
             size_mb = os.path.getsize(output_path) / (1024 * 1024)
-            print(f"Downloaded {genome_id}: {size_mb:.2f} MB")
             logger.info(f"Downloaded {output_path} ({size_mb:.2f} MB)")
             downloaded = True
             break
@@ -79,7 +78,6 @@ def process_genome_id(genome_id, output_dir):
             continue
 
     if not downloaded:
-        print(f"No files found for {genome_id}.")
         logger.warning(f"No files found for {genome_id}.")
     return downloaded
 
@@ -119,27 +117,22 @@ if __name__ == "__main__":
         ids = [line.strip() for line in f if line.strip()]
 
     print(f"Total IDs: {len(ids)}")
+    print("Processing...")
     logger.info(f"Total IDs: {len(ids)}")
-    print(f"GCF: {sum(id.startswith('GCF') for id in ids)}")
     logger.info(f"GCF: {sum(id.startswith('GCF') for id in ids)}")
-    print(f"GCA: {sum(id.startswith('GCA') for id in ids)}")
     logger.info(f"GCA: {sum(id.startswith('GCA') for id in ids)}")
-    print('-' * 50)
 
     for genome_id in ids:
         try:
-            print(f"\nProcessing {genome_id}...")
             success = process_genome_id(genome_id, output_dir)
             if success:
-                print(f"{genome_id} downloaded successfully.")
+                logger.info(f"{genome_id} downloaded successfully.")
             else:
-                print(f"{genome_id} files not found.")
+                logger.info(f"{genome_id} files not found.")
         except Exception as e:
             logger.error(f"Unexpected error for {genome_id}: {e}")
-            print(f"Error processing {genome_id}: {e}")
         time.sleep(1)
 
-    print('-' * 50)
     print(f"Download complete! Files saved to: {os.path.abspath(output_dir)}")
     logger.info(f"Download completed. Files saved to: {os.path.abspath(output_dir)}")
 
