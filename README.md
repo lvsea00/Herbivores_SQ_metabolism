@@ -23,16 +23,11 @@ Here we focused on studying cattle microbiomes leveraging publicly available met
 
 - **CheckM2 environment**
 
-   Installation - [CheckM2](https://github.com/chklovski/CheckM2)
-   
-   CheckM2 version used: v1.0.2
+   [CheckM2](https://github.com/chklovski/CheckM2) - create from `checkm2_env.yml`
 
 - **dRep environment**
 
-   Installation - [dRep](https://github.com/MrOlm/drep)
-   
-   dRep version used: v3.6.2
-
+   [dRep](https://github.com/MrOlm/drep) - create from `drep_env.yml`
 
 ## 🔀 Workflow
 ### 🔍 Data collection
